@@ -8,9 +8,9 @@ pushd .
 
 START_TIME=`date +%s`
 
-cp -R ../../meta/rocm-dev_4.3.0.40300-52_amd64 .
+cp -R ../../meta/rocm-dev_4.5.0.40500-75_amd64 .
 
-dpkg -b rocm-dev_4.3.0.40300-52_amd64
+dpkg -b rocm-dev_4.5.0.40500-75_amd64
 
 sudo dpkg -i *.deb
 
