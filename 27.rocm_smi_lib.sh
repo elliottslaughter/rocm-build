@@ -2,8 +2,6 @@
 
 set -e
 
-git apply 27.rocm_smi_lib-version-1.patch
-
 mkdir -p $ROCM_BUILD_DIR/rocm_smi_lib
 cd $ROCM_BUILD_DIR/rocm_smi_lib
 pushd .
