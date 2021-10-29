@@ -2,6 +2,10 @@
 
 set -e
 
+echo "|====|"
+echo "|SLOW|"
+echo "|====|"
+
 sudo apt install -y libfmt-dev
 
 mkdir -p $ROCM_BUILD_DIR/rocsolver
