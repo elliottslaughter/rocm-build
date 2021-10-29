@@ -2,6 +2,7 @@
 
 set -e
 
+sudo apt install -y mesa-common-dev
 sudo apt install -y dpkg-dev rpm doxygen libelf-dev rename liburi-encode-perl \
                     libfile-basedir-perl libfile-copy-recursive-perl libfile-listing-perl
 
