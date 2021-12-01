@@ -25,8 +25,9 @@ cmake \
     -G Ninja \
     $ROCM_GIT_DIR/llvm-project/llvm
 ninja
-ninja package
-sudo dpkg -i *.deb
+ninja install
+# ninja package
+# dpkg -i *.deb
 
 END_TIME=`date +%s`
 EXECUTING_TIME=`expr $END_TIME - $START_TIME`

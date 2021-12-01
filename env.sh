@@ -4,7 +4,7 @@ module load PrgEnv-gnu
 module load cmake
 module load ninja
 
-root=$HOME/spock/rocm-build
+root=$MEMBERWORK/chm137/rocm-build
 export ROCM_INSTALL_DIR=$root/install
 export ROCM_GIT_DIR=$root/rocm
 export ROCM_BUILD_DIR=$root/build

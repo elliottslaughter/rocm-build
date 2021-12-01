@@ -2,7 +2,7 @@
 
 set -e
 
-root=$HOME/spock/rocm-build
+root=$MEMBERWORK/chm137/rocm-build
 export ROCM_GIT_DIR=$root/rocm
 
 mkdir -p $ROCM_GIT_DIR
