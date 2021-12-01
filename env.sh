@@ -1,10 +1,15 @@
 #!/bin/bash
 
-export ROCM_INSTALL_DIR=/opt/rocm
-export ROCM_GIT_DIR=/home/work/ROCm
-export ROCM_BUILD_DIR=/home/work/rocm-build/build
-export ROCM_PATCH_DIR=/home/work/rocm-build/patch
-export AMDGPU_TARGETS="gfx803;gfx900;gfx906"
-export CMAKE_DIR=/home/work/local/cmake-3.16.8-Linux-x86_64
-export PATH=$ROCM_INSTALL_DIR/bin:$ROCM_INSTALL_DIR/llvm/bin:$ROCM_INSTALL_DIR/hip/bin:$CMAKE_DIR/bin:$PATH
+module load PrgEnv-gnu
+module load cmake
+module load ninja
+
+root=$HOME/spock/rocm-build
+export ROCM_INSTALL_DIR=$root/install
+export ROCM_GIT_DIR=$root/rocm
+export ROCM_BUILD_DIR=$root/build
+export ROCM_PATCH_DIR=$root/patch
+export AMDGPU_TARGETS="gfx908"
+export CMAKE_DIR=$root/cmake-3.16.8-Linux-x86_64
+export PATH="$root/repo:$ROCM_INSTALL_DIR/bin:$ROCM_INSTALL_DIR/llvm/bin:$ROCM_INSTALL_DIR/hip/bin:$CMAKE_DIR/bin:$PATH"
 
